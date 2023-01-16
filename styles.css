@@ -1,9 +1,12 @@
 body{
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 .top{
+
     background-color:#1F2937;
 
 }
@@ -11,10 +14,19 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.headerlogo{
+.top>*{
+
+    padding-left: 160px;
+    padding-right:160px;
+    padding-top:20px;
+    padding-bottom: 100px;
+}
+.header >.logo{
     color:#F9FAF8;
     font-size: 24px;
     font-weight:bold;
+    flex-shrink: 0;
+ 
 }
 .links{
     display: flex;
@@ -26,6 +38,46 @@ body{
 li{
     padding: 8px;
 }
+.hero{
+    display:flex;
+    flex-direction: row;
+}
+.hero>*{
+    flex:1;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+}
+.leftside>.title{
+    color:#F9FAF8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.leftside>.subtitle{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.leftside>button{
+    background-color: #3882f6;
+    align-self: flex-start;
+    color: white;
+    border-radius:6px;
+}
+.image{
+    flex-grow: 1;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
 .mid{
     background-color: white;
 }
